@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<style>
+
+<!--unsquashed man-->
+#img1{
+	position:absolute;
+	left:-20px;
+	visibility:visible;
+}
+
+<!--squashed man-->
+#img2{
+	position:absolute;
+	left:-20px;
+	visibility:hidden;
+}
+
+<!--when the window shrinks lower than 500 pixels, squash the man-->
+@media only screen and (max-width: 500px){
+	#img1{
+	visibility: hidden}
+	#img2{
+	visibility: visible}
+}
+
+</style>
+</head>
+<body>
+	<img height="530" id="img1" src="https://previews.123rf.com/images/redbaron/redbaron0611/redbaron061100030/632864-businessman-with-suitcase-in-the-cramped-white-cube-Stock-Photo.jpg">
+	<img width="100%" height="530px" id="img2" src="https://previews.123rf.com/images/redbaron/redbaron0611/redbaron061100031/632865-businessman-in-the-cramped-white-cube-Stock-Photo.jpg">
+</body>
+</html>
